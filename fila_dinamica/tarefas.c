@@ -111,7 +111,7 @@ Tarefa criar_tarefa()
 {
   Tarefa tarefa;
   printf("Informe o titulo da tarefa: ");
-  scanf("%s", &tarefa.titulo);
+  scanf(" %[^\n]", &tarefa.titulo); // TODO: lembrar sintaxe para ler string com espaços
   printf("Informe a duracao da tarefa: ");
   scanf("%i", &tarefa.duracao);
 
